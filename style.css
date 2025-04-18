@@ -29,3 +29,13 @@ ul {
 ul li {
     margin: 5px 0;
 }
+
+a {
+  text-decoration: none;
+  color: #0645AD; /* or keep it as 'blue' or any hex/RGB value you prefer */
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0b0080;
+}
