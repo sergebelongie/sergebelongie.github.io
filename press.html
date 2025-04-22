@@ -7,10 +7,10 @@
   <style>
     body {
       font-family: 'Lato', sans-serif;
-      margin: 40px auto;
       max-width: 800px;
+      margin: 40px auto;
       padding: 0 20px;
-      line-height: 1.6;
+      background: #f9f9fb;
     }
 
     h1 {
@@ -20,21 +20,25 @@
 
     .press-item {
       display: flex;
-      margin-bottom: 30px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 20px;
+      justify-content: space-between;
+      align-items: flex-start;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
     }
 
-    .press-thumb {
-      width: 120px;
-      height: 80px;
-      object-fit: cover;
-      margin-right: 15px;
-      border-radius: 4px;
-    }
-
-    .press-content {
+    .press-details {
       flex: 1;
+      margin-right: 20px;
+    }
+
+    .press-source {
+      font-size: 0.9em;
+      font-weight: 600;
+      color: #444;
+      margin-bottom: 4px;
     }
 
     .press-title {
@@ -42,6 +46,8 @@
       font-weight: bold;
       color: #1a0dab;
       text-decoration: none;
+      display: inline-block;
+      margin-bottom: 8px;
     }
 
     .press-title:hover {
@@ -49,9 +55,15 @@
     }
 
     .press-meta {
-      font-size: 0.9em;
-      color: #555;
-      margin-top: 5px;
+      font-size: 0.85em;
+      color: #666;
+    }
+
+    .press-thumb {
+      width: 100px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -59,29 +71,26 @@
 
   <h1>Press & Media</h1>
 
-  <!-- Press items go below -->
   <div class="press-item">
-    <img src="https://via.placeholder.com/120x80?text=News" alt="Cornell Chronicle" class="press-thumb">
-    <div class="press-content">
+    <div class="press-details">
+      <div class="press-source">📰 Cornell Chronicle</div>
       <a href="https://news.cornell.edu/stories/2017/03/radical-collaboration-through-machine-learning" class="press-title">
         “Radical collaboration” through machine learning
       </a>
-      <div class="press-meta">
-        Cornell Chronicle | March 7, 2017 | Joe Wilensky
-      </div>
+      <div class="press-meta">Mar 7, 2017 • By Joe Wilensky</div>
     </div>
+    <img src="https://via.placeholder.com/100x80?text=Photo" alt="Radical collaboration" class="press-thumb">
   </div>
 
   <div class="press-item">
-    <img src="https://via.placeholder.com/120x80?text=Met+AI" alt="Metropolitan Museum of Art" class="press-thumb">
-    <div class="press-content">
+    <div class="press-details">
+      <div class="press-source">🏛 The Metropolitan Museum of Art</div>
       <a href="https://www.metmuseum.org/blogs/now-at-the-met/2020/ai-salon-artificial-intelligence" class="press-title">
         Scenes from a Salon on Artificial Intelligence
       </a>
-      <div class="press-meta">
-        The Met | September 11, 2020 | Sofie Andersen
-      </div>
+      <div class="press-meta">Sep 11, 2020 • By Sofie Andersen</div>
     </div>
+    <img src="https://via.placeholder.com/100x80?text=Photo" alt="AI Salon" class="press-thumb">
   </div>
 
 </body>
