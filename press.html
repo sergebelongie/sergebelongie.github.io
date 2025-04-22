@@ -61,12 +61,26 @@
       color: #666;
     }
 
+    .press-thumb-wrapper {
+      width: 120px;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .press-thumb-wrapper::before {
+      content: "";
+      display: block;
+      padding-top: 56.25%; /* 16:9 ratio */
+    }
+
     .press-thumb {
-      width: 100px;
-      height: 80px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       border-radius: 8px;
-      flex-shrink: 0;
     }
 
     @media (max-width: 600px) {
@@ -74,14 +88,14 @@
         flex-direction: column;
       }
 
-      .press-thumb {
-  width: 120px;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-}
+      .press-thumb-wrapper {
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .press-thumb-wrapper::before {
+        padding-top: 56.25%;
+      }
     }
   </style>
 </head>
@@ -97,7 +111,9 @@
       </a>
       <div class="press-meta">Mar 7, 2017 • By Joe Wilensky</div>
     </div>
-    <img src="images/screenshot1.png" alt="Cornell Chronicle" class="press-thumb">
+    <div class="press-thumb-wrapper">
+      <img src="images/screenshot1.png" alt="Cornell Chronicle" class="press-thumb">
+    </div>
   </div>
 
   <div class="press-item">
@@ -108,7 +124,9 @@
       </a>
       <div class="press-meta">Sep 11, 2020 • By Sofie Andersen</div>
     </div>
-    <img src="images/screenshot2.png" alt="Metropolitan Museum" class="press-thumb">
+    <div class="press-thumb-wrapper">
+      <img src="images/screenshot2.png" alt="Metropolitan Museum" class="press-thumb">
+    </div>
   </div>
 
   <div class="press-item">
@@ -119,7 +137,9 @@
       </a>
       <div class="press-meta">Dec 11, 2013</div>
     </div>
-    <img src="images/screenshot3.png" alt="ABC News" class="press-thumb">
+    <div class="press-thumb-wrapper">
+      <img src="images/screenshot3.png" alt="ABC News" class="press-thumb">
+    </div>
   </div>
 
 </body>
