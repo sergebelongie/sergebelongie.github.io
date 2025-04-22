@@ -60,12 +60,3 @@ a:hover {
   height: 24px;
   vertical-align: middle;
 }
-
-#footer {
-  width: 100%;
-  text-align: center;
-  font-size: 0.8em;
-  color: #888;
-  margin-top: 40px;
-  padding-bottom: 20px;
-}
