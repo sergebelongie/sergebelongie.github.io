@@ -1,32 +1,123 @@
-<div class="press-item">
-  <div class="press-details">
-    <div class="press-source">Cornell Chronicle</div>
-    <a href="https://news.cornell.edu/stories/2017/03/radical-collaboration-through-machine-learning" class="press-title">
-      “Radical collaboration” through machine learning
-    </a>
-    <div class="press-meta">Mar 7, 2017 • By Joe Wilensky</div>
-  </div>
-  <img src="images/screenshot1.png" alt="Cornell Chronicle" class="press-thumb">
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Press & Media – Serge Belongie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background: #f9f9fb;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
 
-<div class="press-item">
-  <div class="press-details">
-    <div class="press-source">The Metropolitan Museum of Art</div>
-    <a href="https://www.metmuseum.org/blogs/now-at-the-met/2020/ai-salon-artificial-intelligence" class="press-title">
-      Scenes from a Salon on Artificial Intelligence
-    </a>
-    <div class="press-meta">Sep 11, 2020 • By Sofie Andersen</div>
-  </div>
-  <img src="images/screenshot2.png" alt="Metropolitan Museum" class="press-thumb">
-</div>
+    h1 {
+      text-align: left;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
 
-<div class="press-item">
-  <div class="press-details">
-    <div class="press-source">ABC News</div>
-    <a href="https://abcnews.go.com/Technology/computer-program-tell-youre-hipster/story?id=21123229" class="press-title">
-      Computer Program That Can Tell If You’re a Hipster
-    </a>
-    <div class="press-meta">Dec 11, 2013</div>
+    .press-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+
+    .press-details {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .press-source {
+      font-size: 0.85em;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    .press-title {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #202124;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+
+    .press-title:hover {
+      text-decoration: underline;
+    }
+
+    .press-meta {
+      font-size: 0.85em;
+      color: #666;
+    }
+
+    .press-thumb {
+      width: 100px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 600px) {
+      .press-item {
+        flex-direction: column;
+      }
+
+      .press-thumb {
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Press & Media</h1>
+
+  <div class="press-item">
+    <div class="press-details">
+      <div class="press-source">Cornell Chronicle</div>
+      <a href="https://news.cornell.edu/stories/2017/03/radical-collaboration-through-machine-learning" class="press-title">
+        “Radical collaboration” through machine learning
+      </a>
+      <div class="press-meta">Mar 7, 2017 • By Joe Wilensky</div>
+    </div>
+    <img src="images/screenshot1.png" alt="Cornell Chronicle" class="press-thumb">
   </div>
-  <img src="images/screenshot3.png" alt="ABC News" class="press-thumb">
-</div>
+
+  <div class="press-item">
+    <div class="press-details">
+      <div class="press-source">The Metropolitan Museum of Art</div>
+      <a href="https://www.metmuseum.org/blogs/now-at-the-met/2020/ai-salon-artificial-intelligence" class="press-title">
+        Scenes from a Salon on Artificial Intelligence
+      </a>
+      <div class="press-meta">Sep 11, 2020 • By Sofie Andersen</div>
+    </div>
+    <img src="images/screenshot2.png" alt="Metropolitan Museum" class="press-thumb">
+  </div>
+
+  <div class="press-item">
+    <div class="press-details">
+      <div class="press-source">ABC News</div>
+      <a href="https://abcnews.go.com/Technology/computer-program-tell-youre-hipster/story?id=21123229" class="press-title">
+        Computer Program That Can Tell If You’re a Hipster
+      </a>
+      <div class="press-meta">Dec 11, 2013</div>
+    </div>
+    <img src="images/screenshot3.png" alt="ABC News" class="press-thumb">
+  </div>
+
+</body>
+</html>
