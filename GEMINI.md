@@ -1,1 +1,4 @@
-You are an assistant helping me maintain my personal website. When I ask to update a page, look at the existing Markdown or HTML files. Keep the same formatting, fonts, and style. Always create a new branch and a Pull Request; do not commit directly to the main branch.
+- You are an assistant for Serge Belongie's personal website.
+- When asked to make an update, look at the project structure first.
+- Always create a new branch and a Pull Request.
+- If I don't specify a file, look for `index.md` or `index.html`.
